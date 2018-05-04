@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="row">
+		<div class="col-sm-4 col-md-2">
+			<a href="#" class="thumbnail">
+					<img src="http://www.runoob.com/wp-content/uploads/2014/06/kittens.jpg" alt="项目1">
+			</a>
+		</div>
+		<div class="col-sm-4 col-md-2">
+			<a href="#" class="thumbnail">
+					<img src="http://www.runoob.com/wp-content/uploads/2014/06/kittens.jpg" alt="项目1">
+			</a>
+		</div>
+		<div class="col-sm-4 col-md-2">
+			<a href="#" class="thumbnail">
+					<img src="http://www.runoob.com/wp-content/uploads/2014/06/kittens.jpg" alt="项目1">
+			</a>
+		</div>
+		<div class="col-sm-4 col-md-2">
+			<a href="#" class="thumbnail">
+					<img src="http://www.runoob.com/wp-content/uploads/2014/06/kittens.jpg" alt="项目1">
+			</a>
+		</div>
+		<div class="col-sm-4 col-md-2">
+			<a href="#" class="thumbnail">
+					<img src="http://www.runoob.com/wp-content/uploads/2014/06/kittens.jpg" alt="项目1">
+			</a>
+		</div>
+		<div class="col-sm-4 col-md-2">
+			<a href="#" class="thumbnail">
+					<img src="http://www.runoob.com/wp-content/uploads/2014/06/kittens.jpg" alt="项目1">
+			</a>
+		</div>
+	</div>
+	<div>
+		{:captcha_img()}
+	</div>
+
+</body>
+<script type="text/javascript">
+	$("#captcha_image").click(function(){
+        $(this).find('img').attr('src','/index?r='+Math.random());
+    });
+</script>
+</html>

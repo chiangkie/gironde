@@ -1,6 +1,8 @@
 <?php
 namespace app\glt168\controller;
-
+use think\Request;
+use think\Validate;
+use think\Loader;
 class Admin extends Glt168
 {
    //角色管理
@@ -45,6 +47,28 @@ class Admin extends Glt168
    //管理员添加
    public function add(){
    		return $this->fetch(ATPL.'admin/add');
+   }
+   //管理员添加操作
+   public function add_do(){
+   		if(request()->isAjax()){
+   			
+   			$data=input('post.');
+   			$validate=Loader::validate('Adminlist');
+   			if(!$validate->check($data)){
+
+   				echo json_encode(["s"=>$validate->getError()]);
+   			}else{
+   				$adminlist = new \app\common\model\Adminlist;
+	   			$adminlist->data($data);
+	   			if($adminlist->save()){
+	   				echo json_encode(["s"=>"1"]);
+	   			}else{
+	   				echo json_encode(["s"=>"输入的账号/手机号/邮箱已经被占用！"]);
+	   			}
+   			}
+   			
+   		}
+   		
    }
    //管理员编辑
    public function edit(){

@@ -9,6 +9,9 @@ class System extends Glt168
 	public function columns(){
 		return $this->fetch(ATPL.'system/columns');
 	}
+	public function columns_add(){
+		return $this->fetch(ATPL.'system/columns-add');
+	}
 	public function data(){
 		return $this->fetch(ATPL.'system/data');
 	}

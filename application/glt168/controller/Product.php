@@ -7,8 +7,11 @@ class Product extends Glt168
     {
         return $this->fetch(ATPL.'product/brand');
     }
-
-
+     public function add()
+    {
+        return $this->fetch(ATPL.'product/add');
+    }
+    
     public function category(){
 		return $this->fetch(ATPL.'product/category');
 	}

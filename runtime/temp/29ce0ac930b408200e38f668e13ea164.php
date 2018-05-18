@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:45:"./template/glt168\admin_v1\product\brand.html";i:1525569024;s:43:"./template/glt168/admin_v1/public/meta.html";i:1525429984;s:45:"./template/glt168/admin_v1/public/footer.html";i:1525418397;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:45:"./template/glt168\admin_v1\product\brand.html";i:1525655376;s:43:"./template/glt168/admin_v1/public/meta.html";i:1525429984;s:45:"./template/glt168/admin_v1/public/footer.html";i:1525418397;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -64,7 +64,7 @@
 					<td><img src="temp/brand/dongpeng.jpeg"></td>
 					<td class="text-l"><img title="国内品牌" src="static/h-ui.admin/images/cn.gif"> 东鹏</td>
 					<td class="text-l">东鹏陶瓷被评为“中国名牌”、“国家免检产品”、“中国驰名商标”、http://www.dongpeng.net/</td>
-					<td class="f-14 product-brand-manage"><a style="text-decoration:none" onClick="product_brand_edit('品牌编辑','codeing.html','1')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="active_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+					<td class="f-14 product-brand-manage"><a style="text-decoration:none" onClick="product_brand_edit('品牌编辑','<?php echo url("productadd"); ?>','1')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="active_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
 				</tr>
 			</tbody>
 		</table>
